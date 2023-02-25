@@ -6,10 +6,12 @@
         <shape android:shape="oval"
             >
 
-            <solid android:color="@color/purple_500"
-                >
+            <solid android:color="#FFFFFF"
+           />
 
-            </solid>
+            <size android:width="30dp"
+                android:height="30dp"
+                />
 
         </shape>
     </item>
@@ -19,10 +21,12 @@
         <shape android:shape="oval"
             >
 
-            <solid android:color="@color/purple_500"
-                >
+            <solid android:color="#FFFFFF"
+                />
 
-            </solid>
+            <size android:width="30dp"
+                android:height="30dp"
+                />
 
         </shape>
     </item>

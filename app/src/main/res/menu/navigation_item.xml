@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+<item
+    android:id="@+id/setting"
+    android:title="Setting"
+    android:icon="@drawable/setting"
+
+    />
+
+    <item
+        android:id="@+id/account"
+android:icon="@drawable/useroctagon"
+        android:title="Account" />
+
+
+    <item
+        android:id="@+id/eyes"
+        android:title="Show Log"
+        android:icon="@drawable/eye"/>
+
+    <item
+        android:id="@+id/report"
+        android:title="Report"
+        android:icon="@drawable/note"
+        />
+    <item
+        android:id="@+id/help"
+        android:title="Help"
+        android:icon="@drawable/emoji"/>
+
+    <item
+        android:id="@+id/signout"
+        android:title="Sign Out "
+        android:icon="@drawable/logout"/>
+
+</menu>

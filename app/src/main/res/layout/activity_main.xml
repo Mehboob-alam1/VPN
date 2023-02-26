@@ -4,11 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F2F1F1"
+    android:background="#F8F6F6"
     tools:context=".MainActivity">
-
-
-
 
 
     <LinearLayout
@@ -33,7 +30,7 @@
             android:layout_marginTop="8dp"
             android:text="Quick Connect"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -41,7 +38,7 @@
             android:layout_marginStart="13dp"
             android:layout_marginTop="4dp"
             android:text="Fastest"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -58,49 +55,56 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
-        android:padding="6dp"
+        android:padding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="4dp">
+            android:padding="2dp">
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+
+                android:padding="1dp"
                 android:text="VPN Accelerator"
+
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
 
-                />
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchCompat1"
+                android:layout_width="wrap_content"
 
-                <androidx.appcompat.widget.SwitchCompat
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+
+                android:onClick="VpnAccelerator"
                 android:thumb="@drawable/custum_switch"
-                app:track="@drawable/track"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:track="@drawable/track" />
 
 
-                />
-
-
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Vpn Accelerator Enables A Set Unique Performance Enhancing Technologies Which Can
- Increase VPN Speed Up o 400%. "
-android:textSize="12sp"
+ Increase VPN Speed Up To 400%"
+            android:textSize="12sp"
 
             />
     </LinearLayout>
@@ -113,7 +117,7 @@ android:textSize="12sp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
-        android:padding="8dp"
+        android:padding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
@@ -121,15 +125,16 @@ android:textSize="12sp"
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="3dp"
+            android:padding="2dp"
 
             >
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
-
                 android:layout_height="wrap_content"
+                android:onClick="AcceleratorNotification"
+                android:padding="1dp"
                 android:text="VPN Accelerator notifications"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -138,26 +143,23 @@ android:textSize="12sp"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.SwitchCompat
-                android:id="@+id/switch1"
+                android:id="@+id/switch2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.888"
-                app:layout_constraintStart_toEndOf="@+id/textView2"
-                app:layout_constraintTop_toTopOf="parent"
-
+                android:layout_marginEnd="8dp"
                 android:thumb="@drawable/custum_switch"
-                app:track="@drawable/track"/>
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:track="@drawable/track" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-
-            android:text="get notified when vpn accelerator eswitches you to a faster server. "
-
+            android:text="Get Notified When Vpn Accelerator Eswitches You To A Faster Server. "
             android:textSize="12sp"
 
             />
@@ -172,7 +174,7 @@ android:textSize="12sp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
-        android:padding="8dp"
+        android:padding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
@@ -180,31 +182,35 @@ android:textSize="12sp"
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="3dp"
+            android:padding="2dp"
 
             >
 
             <TextView
 
-                android:layout_width="wrap_content"
+                android:id="@+id/textView10"
 
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:padding="1dp"
                 android:text="Split Tunneling "
                 android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.SwitchCompat
 
+                android:id="@+id/switch3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="SplitTunneling"
+                android:thumb="@drawable/custum_switch"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.888"
-                android:thumb="@drawable/custum_switch"
-                app:track="@drawable/track"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:track="@drawable/track" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -212,7 +218,7 @@ android:textSize="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="allows certain apps or IPs to be excluded from the vpn traffic."
+            android:text="Allows Certain Apps Or IPs To Be Excluded From The Vpn Traffic."
 
             android:textSize="12sp"
 
@@ -228,7 +234,7 @@ android:textSize="12sp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
-        android:padding="8dp"
+        android:padding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
@@ -236,7 +242,7 @@ android:textSize="12sp"
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="3dp"
+            android:padding="2dp"
 
             >
 
@@ -245,22 +251,26 @@ android:textSize="12sp"
                 android:layout_width="wrap_content"
 
                 android:layout_height="wrap_content"
+                android:padding="1dp"
                 android:text="NetShield"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.SwitchCompat
 
+                android:id="@+id/switch4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="NetSheild"
+                android:thumb="@drawable/custum_switch"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.888"
-                android:thumb="@drawable/custum_switch"
-                app:track="@drawable/track"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:track="@drawable/track" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -268,7 +278,7 @@ android:textSize="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="block advertisements, trackers and malware."
+            android:text="Block Advertisements,Trackers And Malware."
 
             android:textSize="12sp"
 
@@ -284,7 +294,7 @@ android:textSize="12sp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:orientation="vertical"
-        android:padding="8dp"
+        android:padding="3dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
@@ -292,7 +302,7 @@ android:textSize="12sp"
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="3dp"
+            android:padding="2dp"
 
             >
 
@@ -301,22 +311,25 @@ android:textSize="12sp"
                 android:layout_width="wrap_content"
 
                 android:layout_height="wrap_content"
+                android:padding="1dp"
                 android:text="Kill Switch"
                 android:textColor="@color/black"
                 android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.SwitchCompat
-
+                android:id="@+id/switch5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="KillSwitch"
+                android:thumb="@drawable/custum_switch"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.888"
-                android:thumb="@drawable/custum_switch"
-                app:track="@drawable/track"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:track="@drawable/track" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -324,7 +337,7 @@ android:textSize="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
 
-            android:text="set uo how VPN behaves if your connection is disrupted."
+            android:text="Set Uo How VPN behaves If Your Connection Is Disrupted."
 
             android:textSize="12sp"
 
@@ -332,5 +345,42 @@ android:textSize="12sp"
 
     </LinearLayout>
 
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        >-->
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--           android:text="buuton1"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            -->
+    <!--            />-->
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="buuton1"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--         -->
+
+    <!--            />-->
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="buuton1"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            />-->
+    <!--        <Button-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:text="buuton1"-->
+    <!--            android:padding="3dp"-->
+    <!--            android:layout_marginStart="5dp"-->
+    <!--            />-->
+    <!--    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

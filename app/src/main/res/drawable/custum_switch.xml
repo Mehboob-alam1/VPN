@@ -9,8 +9,8 @@
             <solid android:color="#FFFFFF"
            />
 
-            <size android:width="30dp"
-                android:height="30dp"
+            <size android:width="20dp"
+                android:height="20dp"
                 />
 
         </shape>
@@ -24,8 +24,8 @@
             <solid android:color="#FFFFFF"
                 />
 
-            <size android:width="30dp"
-                android:height="30dp"
+            <size android:width="20dp"
+                android:height="20dp"
                 />
 
         </shape>
